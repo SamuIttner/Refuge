@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="sobre.css">
+    <link rel="shortcut icon" href="imagem/mini-logo.ico" type="image/x-icon">
+    <title>Sobre</title>
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <a href="refugepi.html"><img src="imagem/logo1.png" alt="Logo"></a>
+    </div>
+    <nav>
+        <a href="socializacao.html"><i class="fas fa-users"></i> Socialização</a>
+        <a href="vagasdeemprego.html"><i class="fas fa-briefcase"></i> Introdução ao Trabalho</a>
+        <a href="marketplace.html"><i class="fas fa-shopping-basket"></i> Marketplace</a>
+    </nav>
+</header>
+
+<section id="loader">
+    <div class="loader-content">
+      <img src="imagem/mundo carregamento.png" alt="Carregando...">
+    </div>
+</section>
+
+    <section class="intro">
+        <div class="intro-content">
+            <h2>Sobre o REFUGE</h2>
+            <p>O REFUGE tem como objetivo dar suporte aos refugiados no Brasil, com o intuito de ajudar, orientar e auxiliar no processo de legalidade de documentações, identificar suas necessidades e desafios.</p>
+            <p>Nossa missão é fornecer um ambiente acolhedor e seguro para refugiados, oferecendo suporte abrangente para ajudá-los a reconstruir suas vidas e se integrarem à sociedade brasileira.</p>
+            <p>Acreditamos na importância da colaboração e da solidariedade para promover a inclusão e a igualdade de oportunidades para todos os refugiados que buscam uma nova vida no Brasil.</p>
+            <h3>Vale lembrar que esse trabalho foi feito por estudantes como projeto de faculdade, então não tem nenhum propósito real.</h3>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="about-content">
+            <h3>Áreas de Assistência</h3>
+            <ul class="services-list">
+                <li>Processo de solicitação de refúgio</li>
+                <li>Orientação para acesso a serviços públicos, como saúde, educação e trabalho</li>
+                <li>Acompanhamento psicossocial e apoio emocional</li>
+                <li>Capacitação profissional e programas de treinamento</li>
+                <li>Integração cultural e apoio comunitário</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+      <div class="about-content">
+          <h2>Sobre o R.E.F.U.G.E</h2>
+          <p>Bem-vindo à página sobre o R.E.F.U.G.E. Aqui você pode conhecer mais sobre nossa missão, valores e a equipe que trabalha para tornar este projeto uma realidade.</p>
+          <h3>Nossa Missão</h3>
+          <p>Nossa missão é fornecer suporte e auxílio aos refugiados no Brasil, ajudando-os a integrar-se à sociedade brasileira e reconstruir suas vidas de maneira segura e acolhedora.</p>
+          <h3>Nossos Valores</h3>
+          <ul class="values-list">
+              <li>Empatia</li>
+              <li>Colaboração</li>
+              <li>Respeito</li>
+              <li>Igualdade</li>
+          </ul>
+      </div>
+  </section>
+  
+    <section id="equipe" class="team">
+        <div class="team-content">
+            <h3>Equipe</h3>
+            <ul class="team-list">
+                <li>
+                    <img src="imagem/samuel.jpg" alt="Foto da equipe">
+                    <h4>Samuel Ittner</h4>
+                </li>
+                <li>
+                    <img src="imagem/Larissa.jpg" alt="Foto da equipe">
+                    <h4>Larissa Franco Rafael</h4>
+                </li>
+                <li>
+                    <img src="imagem/perfil-de-usuario.png" alt="Foto da equipe">
+                    <h4>Renato Gabriel da Costa Oliveira</h4>
+                </li>
+                <li>
+                    <img src="imagem/João.jpg" alt="Foto da equipe">
+                    <h4>João Victor Meirelles</h4>
+                </li>
+                <li>
+                    <img src="imagem/perfil-de-usuario.png" alt="Foto da equipe">
+                    <h4>Diogo Nery da Fonseca</h4>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <footer>
+        <p>&copy; 2023 R.E.F.U.G.E Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "complete") {
+                // Esconde a tela de carregamento quando a página estiver totalmente carregada
+                // Aguarda 1 segundo (1000 milissegundos) antes de esconder a tela de carregamento
+                setTimeout(function() {
+                    document.getElementById("loader").style.display = "none";
+                    document.getElementById("sobre").style.display = "block"; // Mostra a seção #sobre
+                }, 1500);
+            }
+        };
+    </script>
+
+</body>
+</html>
