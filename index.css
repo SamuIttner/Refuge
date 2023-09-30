@@ -1,0 +1,186 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: white;
+  background:  url('imagem/mundo_avioes_verde.gif');
+  background-size: contain; /* Para cobrir toda a área do corpo */
+  background-repeat: no-repeat; /* Para evitar a repetição da imagem */
+  background-color:#1d1c28 ;
+}
+
+.hidden {
+  display: none;
+}
+
+#loading-screen {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+#loading-icon {
+  /* Estilize o ícone de carregamento */
+}
+
+#loading-text {
+  /* Estilize o texto de carregamento */
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+
+header {
+  width: 100%;
+  height: auto;
+  background-color: none;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.box-do-texto {
+  width: 100%;
+  background-color: none;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.box-do-login {
+  width: 100%;
+  background-color: none;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+input[type="email"],
+input[type="password"] {
+  background-color: white;
+  color: black;
+  width: 100%;
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+}
+input[type=email],
+input[type=password] {
+  background-color: white;
+  color: #000;
+  width: 405px;
+  height: 55px;
+  margin-top: -5px;
+  cursor: pointer;
+  justify-content: center;
+  border: black solid;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+input:hover[type=email], 
+input:hover[type=password]{
+  color: #43e96d;
+  background-color: black;
+  border: #43e96d solid;
+  width: 400px;
+  height: 55px;
+}
+input:active[type=email],
+input:active[type=password]{
+  transform: scale(0.96);
+}
+button {
+  background-color: #43e96d;
+  color: black;
+  width: 100%;
+  height: 55px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+button:hover{
+  background-color: black;
+  color: #43e96d;
+  border: #43e96d solid ;
+  width: 97%;
+  height: 52px;
+}
+button:active{
+  transform: scale(0.96);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h3{
+  color: #43e96d;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.amarelo {
+  margin-bottom: 20px;
+}
+
+.amarelo img {
+  max-width: 100%;
+  margin-left: -170px;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+      padding: 50px;
+  }
+
+  header {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .box-do-texto {
+      width: 700px;
+      margin: 0 auto;
+      margin-bottom: 50px;
+  }
+
+  .box-do-login {
+      width: 450px;
+      margin: 0 auto;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+      width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+}

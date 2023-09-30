@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagem/mini-logo.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="vagasdeemprego.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <title>Vagas de Emprego</title>
+</head>
+<body>
+
+
+  
+
+    <div class="contatos">
+        <div class="contatos1">
+            <div class="cont">
+                <p>(41) 4002-8922</p>
+
+            </div>
+            <div class="cont">
+                <p>refuge.adm@gmail.com</p>
+
+            </div>
+            <div class="cont">
+                <p>Rua Dos Pombos, 00-Curitiba</p>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="vermelho">
+        <a href="refugepi.html"><div class="amarelo"><img src="imagem/logo1.png" alt=""></div> </a>
+          
+          <div class="azul">
+              <div class="verde">
+                <a href="socializacao.html"><p>Socialização</p></a>
+              </div>
+              <div class="verde">
+                  <a href="vagasdeemprego.html"><p>Introdução ao Trabalho</p></a>
+              </div>
+              <div class="verde">
+                  <a href="marketplace.html"><p>Marketplace</p></a>
+              </div>
+          </div>
+      </div>
+
+
+    
+      <div class="categorias">
+        <ul>
+            <li><a href="vagasdeemprego.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="curriculo.html"><i class="fas fa-user-circle"></i> Curriculo</a></li>
+            <li><a href="#" id="categorias-emprego"><i class="fas fa-briefcase"></i> Categorias de Emprego</a>
+                <ul class="sub-opcoes">
+                    <li><a href="#"><i class="fas fa-building"></i> Administração e escritório</a></li>
+                    <li><a href="#"><i class="fas fa-bullhorn"></i> Vendas e marketing</a></li>
+                    <li><a href="#"><i class="fas fa-laptop-code"></i> TI e desenvolvimento</a></li>
+                    <li><a href="#"><i class="fas fa-hospital"></i> Saúde e assistência social</a></li>
+                    <li><a href="#"><i class="fas fa-hard-hat"></i> Engenharia</a></li>
+                    <li><a href="#"><i class="fas fa-chalkboard-teacher"></i> Ensino e educação</a></li>
+                   
+                </ul>
+            </li>            
+            <li><a href="empregadores.html"><i class="fas fa-star"></i> Empregadores</a></li>
+            <li><a href="informaçoescarreira.html"><i class="fas fa-info-circle"></i> Informações Sobre Carreira</a></li>
+               
+        </ul>
+    </div>
+    
+
+    <script>
+        const categoriasEmprego = document.querySelector('#categorias-emprego');
+        const subOpcoes = document.querySelector('.sub-opcoes');
+        let subOpcoesVisiveis = false;
+
+        function alternarSubOpcoes() {
+            subOpcoesVisiveis = !subOpcoesVisiveis;
+            subOpcoes.style.display = subOpcoesVisiveis ? 'block' : 'none';
+        }
+
+        categoriasEmprego.addEventListener('click', alternarSubOpcoes);
+    </script>
+
+<div class="anuncio1">
+    <div class="container">
+      <div class="job">
+        <h2>Professor(a) de Matemática</h2>
+        <h3>Escola ABC</h3>
+        <div class="salary">
+          <i class="fas fa-money-bill-wave"></i>
+          R$ 3.500 - 5.000
+        </div>
+        <div class="working-hours">
+          <i class="fas fa-clock"></i>
+          30 horas semanais
+        </div>
+        <p>Estamos em busca de um(a) professor(a) de Matemática para lecionar para alunos do Ensino Fundamental e Médio. Requisitos: formação em Matemática, experiência em sala de aula e conhecimento do currículo escolar.</p>
+        <div class="requirements">
+          Requisitos mínimos: Formação em Matemática, experiência em sala de aula e conhecimento do currículo escolar.
+        </div>
+        <a href="inscricaoemprego.html">
+          <button type="button">Candidatar-se</button>
+        </a>
+      </div>
+      <div class="job">
+        <h2>Coordenador(a) Pedagógico(a)</h2>
+        <h3>Instituto de Ensino XYZ</h3>
+        <div class="salary">
+          <i class="fas fa-money-bill-wave"></i>
+          R$ 6.000 - 8.000
+        </div>
+        <div class="working-hours">
+          <i class="fas fa-clock"></i>
+          40 horas semanais
+        </div>
+        <p>Estamos procurando um(a) coordenador(a) pedagógico(a) para liderar a equipe docente e desenvolver estratégias educacionais. Requisitos: formação em Pedagogia, experiência em coordenação pedagógica e conhecimento em legislação educacional.</p>
+        <div class="requirements">
+          Requisitos mínimos: Formação em Pedagogia, experiência em coordenação pedagógica e conhecimento em legislação educacional.
+        </div>
+        <a href="inscricaoemprego.html">
+          <button type="button">Candidatar-se</button>
+        </a>
+      </div>
+      <div class="job">
+        <h2>Professor(a) de Língua Inglesa</h2>
+        <h3>Escola de Idiomas ABC</h3>
+        <div class="salary">
+          <i class="fas fa-money-bill-wave"></i>
+          R$ 2.500 - 4.000
+        </div>
+        <div class="working-hours">
+          <i class="fas fa-clock"></i>
+          20 horas semanais
+        </div>
+        <p>Estamos procurando um(a) professor(a) de Língua Inglesa para lecionar para alunos de diferentes níveis. Requisitos: fluência em Inglês, formação na área de Letras ou cursos afins, e experiência em ensino de idiomas.</p>
+        <div class="requirements">
+          Requisitos mínimos: Fluência em Inglês, formação na área de Letras ou cursos afins, e experiência em ensino de idiomas.
+        </div>
+        <a href="inscricaoemprego.html">
+          <button type="button">Candidatar-se</button>
+        </a>
+      </div>
+      <div class="job">
+        <h2>Professor(a) de História</h2>
+        <h3>Colégio XYZ</h3>
+        <div class="salary">
+          <i class="fas fa-money-bill-wave"></i>
+          R$ 3.000 - 4.500
+        </div>
+        <div class="working-hours">
+          <i class="fas fa-clock"></i>
+          25 horas semanais
+        </div>
+        <p>Estamos em busca de um(a) professor(a) de História para lecionar para alunos do Ensino Médio. Requisitos: formação em História, experiência em sala de aula e conhecimento do currículo escolar.</p>
+        <div class="requirements">
+          Requisitos mínimos: Formação em História, experiência em sala de aula e conhecimento do currículo escolar.
+        </div>
+        <a href="inscricaoemprego.html">
+          <button type="button">Candidatar-se</button>
+        </a>
+      </div>
+      <div class="job">
+        <h2>Psicólogo(a) Escolar</h2>
+        <h3>Escola de Ensino Médio ABC</h3>
+        <div class="salary">
+          <i class="fas fa-money-bill-wave"></i>
+          R$ 4.500 - 6.000
+        </div>
+        <div class="working-hours">
+          <i class="fas fa-clock"></i>
+          35 horas semanais
+        </div>
+        <p>Estamos procurando um(a) psicólogo(a) escolar para atuar no suporte psicológico aos alunos, pais e equipe escolar. Requisitos: formação em Psicologia, experiência em atendimento psicológico e conhecimento em psicologia educacional
+  
+
+      
+
+<footer><div class="batata">
+  <div class="batatinha">
+    <a href="ajuda.html"><p>Ajuda</p></a>
+  </div>
+  <div class="batatinha">
+      <a href="sobre.html"><p>Sobre</p></a>
+  </div>
+</div>
+</div>
+  </footer>
+      
+
+    
+</body>
+</html>
