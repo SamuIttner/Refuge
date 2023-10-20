@@ -230,15 +230,19 @@ nav a:hover {
 footer {
   background-color: #1d1c28;
   color: #fff;
-  padding: 20px;
+  padding: 40px;
   text-align: center;
-  display: block;
-  width: 100%;
-  bottom: 0;
 }
-footer p {
+
+.footer-links a {
+  margin-right: 15px; 
+  text-decoration: none;
+  color: #43e96d;
+}
+.footer p {
   font-size: 1.2em;
-  margin: 0;
+  margin-top: 10px;
 }
-
-
+.footer-links a:last-child {
+  margin-right: 0;
+}        
