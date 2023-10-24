@@ -137,6 +137,104 @@ button[type="submit"] {
   color: #43e96d;
 }
 
+.product-box1 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 300px;
+  margin-top: -280px;
+}
+
+.product-box2 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 300px;
+  margin-top: -500px;
+}
+
+.product-box3 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 530px;
+  margin-top: -30 0px;
+}
+
+.product-box4 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 530px;
+  margin-top: -500px;
+}
+
+.product-box5 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-right: -130px;
+  margin-bottom: -100px;
+}
+
+.product-box6 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 760px;
+  margin-top: -490px;
+}
+
+.product-box img {
+  max-width: 100%;
+}
+
+.product-box h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-price {
+  color: #43e96d;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.product-box p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
 
 @keyframes pulsate {
   0% {
@@ -174,6 +272,7 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
+  margin-top: 330px;
 }
 
 .footer-links a {
@@ -188,3 +287,4 @@ footer {
 .footer-links a:last-child {
   margin-right: 0;
 }
+
