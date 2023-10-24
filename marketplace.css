@@ -65,7 +65,7 @@ nav a:hover {
 
 .container-search {
   text-align: center;
-  margin-top: 15px;
+  margin-top: -35px;
   margin-bottom: 5px;
 }
 
@@ -81,8 +81,8 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -500px;
-  margin-top: -64px;
+  margin-left: -350px;
+  margin-top: 30px;
 }
 
 input[type="text"] {
