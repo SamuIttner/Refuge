@@ -193,13 +193,13 @@ button[type="submit"] {
   border: 1px solid #ddd;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px;
+  margin: 2px;
   width: 200px;
   text-align: center;
   background-color: #fff;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  margin-right: -130px;
-  margin-bottom: -100px;
+  margin-left: 760px;
+  margin-right: -60px;
 }
 
 .product-box6 {
@@ -213,6 +213,33 @@ button[type="submit"] {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   margin-left: 760px;
   margin-top: -490px;
+}
+
+.product-box7 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 2px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 995px;
+  margin-right: -120px;
+  margin-bottom: -500px;
+}
+
+.product-box8 {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  margin-left: 995px;
+  margin-right: -60px;
 }
 
 .product-box img {
@@ -234,6 +261,32 @@ button[type="submit"] {
   font-size: 14px;
   margin: 10px 0;
 }
+
+.my-button {
+  background-color: #43e96d;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-left: 600px;
+  margin-top: 260px;
+}
+
+  .my-button :before {
+    content: "\f078";
+    font-family: "Font Awesome 5 Free";
+    font-size: 16px;
+    margin-right: 5px;
+  
+
+
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 
 
 @keyframes pulsate {
@@ -272,7 +325,7 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
-  margin-top: 330px;
+  margin-top: 60px;
 }
 
 .footer-links a {
