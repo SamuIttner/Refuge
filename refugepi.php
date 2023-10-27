@@ -38,7 +38,7 @@
             <h3 style="color: #43e96d;">Para iniciar sua jornada no Refuge clique em um dos links no topo da página!</h3>
         </div>
         <div class="intro-image">
-            <img src="imagem/REFUGEE.jpg" alt="Desenho de refugiados">
+            <img src="imagem/REFUGE.png" alt="Desenho de refugiados">
         </div>
     </section>
 
