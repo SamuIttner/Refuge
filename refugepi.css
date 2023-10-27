@@ -74,7 +74,7 @@ nav a:hover {
 
 
 .intro-content {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 .intro h1 {
@@ -89,8 +89,8 @@ nav a:hover {
   margin-bottom: 20px;
 }
 
-.intro-image img {
-  max-width: 350px; 
+.intro-image img { 
+  width: 450px;
   height: auto;
   float: left;
 }
