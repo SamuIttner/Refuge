@@ -45,11 +45,44 @@
                             </div>
                         </div>
                     </form>
-                    <?php
-                    if (isset($mensagemErro)) {
-                        echo "<p>$mensagemErro</p>";
-                    }
-                    ?>
+
+    <?php                
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    // Conexão com o banco de dados
+    include "conexao.php";
+
+    // Verifique se a conexão foi bem-sucedida
+    if ($conn->connect_error) {
+        die("Erro na conexão com o banco de dados: " . $conn->connect_error);
+    }
+
+    // Evite SQL injection usando declarações preparadas
+    $query = "SELECT email, senha FROM cadastro WHERE email = ?";
+    $stmt = $conn->prepare($query);
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $stmt->bind_result($email, $senha);
+    $stmt->fetch();
+
+    // Verifique se o email existe no banco de dados e se a senha está correta
+    if ($senha && password_verify($senha, $senha)) {
+        // Autenticação bem-sucedida, você pode redirecionar o usuário para a página de sucesso
+        header("Location: refugepi.php");
+        exit();
+    } else {
+        // Credenciais incorretas, mostre uma mensagem de erro
+        echo "Email e/ou senha incorretos. Tente novamente.";
+    }
+
+    // Feche a conexão com o banco de dados
+    $stmt->close();
+    $conn->close();
+}
+?>
+
                     <p class="w-100 text-center">&mdash; ou &mdash;</p>
                     <div class="social d-flex text-center">
                         <script>
@@ -57,6 +90,10 @@
                                 window.history.back();
                             });
                         </script>
+
+
+
+
                         <a href="cadastre-se.php" class="px-2 py-2 ml-md-1 rounded"><span class="ion-logo-twitter mr-2"></span> Cadastre-se</a>
                     </div>
                 </div>
