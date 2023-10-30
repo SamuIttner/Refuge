@@ -19,7 +19,7 @@
         <nav>
             <ul>
                 <li><a href="socializacao.html"><i class="fas fa-users"></i> Socialização</a></li>
-                <li><a href="introduçaotrabalho.ph"><i class="fas fa-briefcase"></i> Introdução ao Trabalho</a></li>
+                <li><a href="introduçaotrabalho.php"><i class="fas fa-briefcase"></i> Introdução ao Trabalho</a></li>
                 <li><a href="marketplace.html"><i class="fas fa-shopping-basket"></i> Marketplace</a></li>
             </ul>
         </nav>
