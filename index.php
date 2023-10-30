@@ -41,7 +41,7 @@
                                 </label>
                             </div>
                             <div class="w-50 text-md-right">
-                                <a href="recuperacaodesenha.html" style="color: #fff">Esqueceu a senha?</a>
+                                <a href="recuperacaodesenhanovo.html" style="color: #fff">Esqueceu a senha?</a>
                             </div>
                         </div>
                     </form>
