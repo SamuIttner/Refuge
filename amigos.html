@@ -7,45 +7,29 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="amigos.css">
+    <link rel="stylesheet" href="socializacao.css">
     <title>Amigos</title>
 </head>
 <body>
     
-    <div class="contatos">
-        <div class="contatos1">
-            <div class="cont">
-                <p>(41) 4002-8922</p>
-
-            </div>
-            <div class="cont">
-                <p>refuge.adm@gmail.com</p>
-
-            </div>
-            <div class="cont">
-                <p>Rua Dos Pombos, 00-Curitiba</p>
-
-            </div>
-        </div>
+  <header>
+    <div class="logo">
+        <a href="refugepi.php"> <img src="imagem/logo1.png" alt="Logo"> </a>
     </div>
+    <nav>
+        <ul>
+            <li><a href="socializacao.html"><i class="fas fa-users"></i> Socialização</a></li>
+            <li><a href="vagasdeemprego.html"><i class="fas fa-briefcase"></i> Introdução ao Trabalho</a></li>
+            <li><a href="marketplace.html"><i class="fas fa-shopping-basket"></i> Marketplace</a></li>
+        </ul>
+    </nav>
+</header>
 
-    <div class="vermelho">
-        <a href="refugepi.html">
-        <div class="amarelo"><img src="imagem/logo1.png" alt=""></div>
-        </a>
-        
-        <div class="azul">
-            <div class="verde">
-              <a href="socializacao.html"><p>Socialização</p></a>
-            </div>
-            <div class="verde">
-                <a href="vagasdeemprego.html"><p>Introdução ao Trabalho</p></a>
-            </div>
-            <div class="verde">
-                <a href="marketplace.html"><p>Marketplace</p></a>
-            </div>
-        </div>
+<section id="loader">
+    <div class="loader-content">
+      <img src="imagem/mundo carregamento.png" alt="Carregando...">
     </div>
-<br/>
+</section>
 
        <h1>Lista de Amigos</h1>
    <a href="socializacao.html"><button class="voltar">Voltar</button></a>
@@ -137,15 +121,24 @@
   </body>
   </html>
   
-    <div class="batata">
-        <div class="batatinha">
-          <a href="http://www.google.com"><p>Ajuda</p></a>
-        </div>
-        <div class="batatinha">
-            <a href="http://www.google.com"><p>Sobre</p></a>
-        </div>
+  <footer>
+    <div class="footer-links">
+        <a href="ajuda.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+        <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
     </div>
-    </div>
+    <p>&copy; 2023 R.E.F.U.G.E Todos os direitos reservados.</p>
+</footer>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<script>
+    document.onreadystatechange = function () {
+        if (document.readyState === "complete") {
+            setTimeout(function() {
+                document.getElementById("loader").style.display = "none";
+            }, 1500);
+        }
+    };
+</script>
 </body>
 </html>
     
