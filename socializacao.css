@@ -379,7 +379,7 @@ button {
   }
   
   .loader-content img {
-    max-width: 100px; 
+    max-width: 170px; 
     animation: pulsate 1.5s infinite; 
   }
   
