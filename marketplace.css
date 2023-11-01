@@ -14,21 +14,22 @@ header {
   background-color: #1d1c28;
   color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 10px 20px; 
 }
-.logo img {
-  max-width: 50%; 
-  height: auto;
+
+h1{
+  font-size: 30px;
 }
 
+.logo img { 
+  height: auto;
+}
 
 nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
-  display: flex;
 }
 
 nav li {
@@ -42,13 +43,13 @@ nav a {
   text-decoration: none;
   padding: 10px 15px;
   border-radius: 5px;
-  transition: background-color 0.3s ease;
-  display: inline-flex;
+  transition: background-color 0.3s ease; 
+  margin-right: 100px;
 }
 
-nav a i {
+nav h1 i {
   margin-right: 5px;
-  margin-left: 5px;
+  margin-left: 10px;
   transition: transform 0.3s ease;
 }
 
@@ -315,8 +316,8 @@ button[type="submit"] {
 }
 
 .loader-content img {
-  max-width: 100px; 
-  animation: pulsate 1.5s infinite; 
+  max-width: 150px; 
+  animation: pulsate 1.5s infinite;   
 }
 
 
@@ -340,4 +341,5 @@ footer {
 .footer-links a:last-child {
   margin-right: 0;
 }
+
 
