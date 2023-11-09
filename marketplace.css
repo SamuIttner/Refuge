@@ -172,3 +172,18 @@ footer {
   margin-right: 0;
 }
 
+.propaganda {
+  margin-top: 30px;
+  margin-left: 300px;
+}
+
+.propaganda img {
+  width: 1250px;
+  height: 300px;
+}
+
+.categorias {
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
