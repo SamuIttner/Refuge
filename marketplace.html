@@ -30,7 +30,8 @@
             <button type="submit"><i class="fas fa-search"></i></button>
           </div>
           
-        <!-- pensei em linkar essa parte com a socializaçao, tipo pro usuario conversar diretamente com o vendedor -->   
+        <!-- pensei em linkar essa parte com a socializaçao, tipo pro usuario conversar diretamente com o vendedor -->  
+        <!-- Samuel - na hora eu achei estranho, mas faz sentido tem que ver o resto do pessoal--> 
           <div class="chat">
             <a href="socializacao.html">
             <button type="submit">chat</button> 
@@ -38,6 +39,7 @@
         </div>
 
         <!-- essa parte ia ser tipo um carrinho, mas o nome ia ser favoritos, tipo ao inves da pessoa adicionar o produto no carrinho ia colocar nos favoritos msm -->
+        <!-- Samuel - Isso eu não entendi, tem que desenvolver melhor-->
         <div class="favoritos">
             <a href="carrinho.php">
             <button type="submit">Favoritos</button> 
@@ -45,6 +47,7 @@
         </div>
 
         <!-- ao inves de adicionar, mudei o nome para anunciar, que fica mais legalzinho eu acho -->
+        <!-- Samuel - Gostei -->
         <div class="adicionar">
             <a href="adicionar.html">
             <button type="submit">Anunciar</button>
@@ -53,10 +56,74 @@
 
     </header>
 
-        <!-- essa area nao e pra essa propaganda que eu coloquei kkkkk, e so pra saber que esse vai ser o lugar que vao ter aquelas propagandas que vao trocando sabe, que tem as setinhas e a pessoa pode ir trocando e tals -->
-    <div class="propaganda">
-        <a href="?"><img src="imagem/dragoncity.jpg" alt="propaganda1"></a>
-    </div>
+        <!-- Samuel - Tentei fazer algo aqui para ser os slides em formato de carrossel (que fica passando sozinho sempre os mesmos) vejam se ficou bom-->
+        <div class="slider">
+           <div class="slides">
+            <!--Radio Buttons-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+            <!--FIM Radio Buttons-->
+
+            <!--Slide Images-->
+            <div class="slide primeiro">
+                <img src="imagem/chinelo.jpg" alt="Imagem chinelo"/>
+            </div>
+            <div class="slide">
+                <img src="imagem/carro.jpg" alt="Imagem Carro"/>
+            </div>
+            <div class="slide">
+                <img src="imagem/bicicleta.jpg" alt="Imagem bicicleta"/>
+            </div>
+            <div class="slide">
+                <img src="imagem/celular.jpg" alt="Imagem Celular"/>
+            </div>
+            <!--FIM Slide Images-->
+
+            <!--Navigation Auto-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
+            </div>
+
+           </div>
+           
+           
+           <div class="manual-navigation">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+           </div>
+
+
+        </div>
+
+<script>
+    
+    let count = 1;
+    document.getElementById("radio1").checked = true;
+
+    setInterval(function(){
+        nextImage();
+    }, 5000)
+
+    function nextImage(){
+        count++;
+        if(count>4){
+            count = 1;
+        }
+
+        document.getElementById("radio" + count).checked = true;
+
+    }
+
+</script>
+
+
 
     <!-- essa area é pra ser que nem aquela da olx, bem em baixo da propaganda, com as imagens e o nome bem em baixo -->
     <div class="categorias">
@@ -65,8 +132,8 @@
         <a href="#"><img src="imagens/icone-casa-decoracao.png" alt="Casa e decoração"></a>
         <a href="#"><img src="imagens/icone-beleza-saude.png" alt="Beleza e saúde"></a>
         <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="Lazer e esportes"></a>
-        <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="automoveis"></a>
-        <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="ver todas as categorias"></a>
+        <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="Automóveis"></a>
+        <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="Ver todas as categorias"></a>
     </div>
 
     <!-- area onde vao ficar os anuncios, acho que eles separados assim iam ficar melhor, divididos por area, e dai o usuario mesmo vai vendo oque ele quer especificamente -->
