@@ -18,6 +18,11 @@ header {
   padding: 10px 20px; 
 }
 
+header button:hover{
+  background-color: black;
+  color: #43e96d;
+}
+
 h1{
   font-size: 30px;
 }
@@ -32,32 +37,19 @@ nav ul {
   padding: 0;
 }
 
-nav li {
-  margin-left: 15px; 
-}
-
 nav a {
   color: #fff;
   font-weight: bold;
   font-size: 1.2em;
   text-decoration: none;
-  padding: 10px 15px;
   border-radius: 5px;
   transition: background-color 0.3s ease; 
-  margin-right: 100px;
 }
 
 nav h1 i {
   margin-right: 5px;
   margin-left: 10px;
-  transition: transform 0.3s ease;
 }
-
-nav a:hover i {
-  transform: translateX(-5px);
-  color: #43e96d;
-}
-
 
 nav a:hover {
   background-color: #2c2b3a; 
@@ -71,11 +63,16 @@ nav a:hover {
 }
 
 
+
+
+
+
+
 .adicionar {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 10px;
   margin-top: 7px;
 }
 
@@ -83,7 +80,7 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 150px;
+  margin-left: 10px;
   margin-top: 7px;
 }
 
@@ -91,17 +88,24 @@ nav a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 250px;
+  margin-left: 10px;
   margin-top: 7px;
 }
 
 .search-bar {
   display: flex;
   justify-content: center;
-  align-items: center;
-  margin-left: 400px;
+  align-items: center;  
+  padding-left: 800px;
   margin-top: 7px;
 }
+
+
+
+
+
+
+
 
 input[type="text"] {
   padding: 5px;
@@ -115,6 +119,7 @@ button[type="submit"] {
     color: #fff;
     border: none;
     border-radius: 3px;
+    margin-left: 2px;
     cursor: pointer;
 }
 
@@ -171,12 +176,6 @@ footer {
 .footer-links a:last-child {
   margin-right: 0;
 }
-
-
-
-
-
-
 
 .slider {
   margin: 0 auto;
@@ -261,9 +260,6 @@ footer {
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background-color: black;
 }
-
-
-
 
 .categorias {
   margin-left: 500px;
