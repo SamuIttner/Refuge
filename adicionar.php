@@ -64,6 +64,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 
             </ul>
         </nav>
+
+        <div class="voltar-botao">
+            <a href="marketplace.php"><button type="submit" style="font-size: 15px;"><i class="fas fa-arrow-left" style="font-size: 20px;"></i> Voltar</button></a>
+         </div>
+        
 </header>
    
  <style>
