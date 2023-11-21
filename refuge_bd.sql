@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 24/10/2023 às 00:16
+-- Tempo de geração: 21/11/2023 às 05:39
 -- Versão do servidor: 10.4.28-MariaDB
 -- Versão do PHP: 8.0.28
 
@@ -45,7 +45,29 @@ CREATE TABLE `cadastro` (
 INSERT INTO `cadastro` (`id`, `nome`, `email`, `telefone`, `sexo`, `senha`, `pais_origem`, `data_nascimento`) VALUES
 (5, 'Larissa Franco Rafael', 'larissarafael260205@gmail.com', 2147483647, 'feminino', 'Larissa11', 'Brasil', '2005-02-26'),
 (7, 'Ronaldo', 'ronaldo@gmail.com', 923482943, 'masculino', 'legal123', 'Rússia', '1994-03-08'),
-(8, 'Renato Almeida', 'xicrinha@gmail.com', 2147483647, 'masculino', 'Xicrinha123', 'Arábia Saudita', '2005-09-10');
+(8, 'Renato Almeida', 'xicrinha@gmail.com', 2147483647, 'masculino', 'Xicrinha123', 'Arábia Saudita', '2005-09-10'),
+(9, 'saasfdasf', 'burrao@gmail.com', 2147483647, 'feminino', 'leticia', 'Itália', '0342-02-04');
+
+-- --------------------------------------------------------
+
+--
+-- Estrutura para tabela `produtos`
+--
+
+CREATE TABLE `produtos` (
+  `id` int(11) NOT NULL,
+  `nome` varchar(255) NOT NULL,
+  `preco` varchar(255) NOT NULL,
+  `descricao` varchar(500) NOT NULL,
+  `imagem` varchar(55) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Despejando dados para a tabela `produtos`
+--
+
+INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `imagem`) VALUES
+(24, 'carro', 'R$ 10000', 'carro bonito', './imgprodutos/carro1.jpg');
 
 --
 -- Índices para tabelas despejadas
@@ -58,6 +80,12 @@ ALTER TABLE `cadastro`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices de tabela `produtos`
+--
+ALTER TABLE `produtos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT para tabelas despejadas
 --
 
@@ -65,7 +93,13 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `cadastro`
 --
 ALTER TABLE `cadastro`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+
+--
+-- AUTO_INCREMENT de tabela `produtos`
+--
+ALTER TABLE `produtos`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
