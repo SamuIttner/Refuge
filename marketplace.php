@@ -125,17 +125,108 @@
 </script>
 
 
+</br>
+</br>
+</br>
 
     <!-- essa area é pra ser que nem aquela da olx, bem em baixo da propaganda, com as imagens e o nome bem em baixo -->
     <div class="categorias">
-        <a href="#"><img src="imagens/icone-eletronicos.png" alt="Eletrônicos"></a>
-        <a href="#"><img src="imagens/icone-moda.png" alt="Moda"></a>
-        <a href="#"><img src="imagens/icone-casa-decoracao.png" alt="Casa e decoração"></a>
-        <a href="#"><img src="imagens/icone-beleza-saude.png" alt="Beleza e saúde"></a>
-        <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="Lazer e esportes"></a>
-        <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="Automóveis"></a>
-        <a href="#"><img src="imagens/icone-lazer-esportes.png" alt="Ver todas as categorias"></a>
+        <a href="#"><img src="imagem/carros.png" alt="Autos e peças"></a>
+        <a href="#"><img src="imagem/casa-limpa.png" alt="Imóveis"></a>
+        <a href="#"><img src="imagem/dispositivos-eletronicos.png" alt="Eletrônicos e celulares"></a>
+        <a href="#"><img src="imagem/moveis.png" alt="Mobilia"></a>
+        <a href="#"><img src="imagem/moda.png" alt="Moda e beleza"></a>
+        <a href="#"><img src="imagem/esportes-com-bolas.png" alt="Esporte e lazer"></a>
+        <a href="#"><img src="imagem/instrumento-musical.png" alt="Música e hobbies"></a>
+        <a href="#"><img src="imagem/brinquedos.png" alt="Artigos infantis"></a>
+        <a href="#"><img src="imagem/agricultura-inteligente.png" alt="Agro e industria"></a>
+        <a href="#"><img src="imagem/animais-de-estimacao.png" alt="Animais"></a>
     </div>
+
+    <?php
+// Conectar ao banco de dados (substitua os valores conforme necessário)
+$host = "localhost";
+$usuario_bd = "root";
+$senha_bd = "";
+$nome_bd = "refuge_bd";
+
+$conn = new mysqli($host, $usuario_bd, $senha_bd, $nome_bd);
+
+// Verificar a conexão
+if ($conn->connect_error) {
+    die("Erro de conexão: " . $conn->connect_error);
+}
+
+// Consultar os produtos no banco de dados
+$sql = "SELECT * FROM produtos";
+$result = $conn->query($sql);
+?>
+
+
+
+    <style>
+        .card {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin: 10px;
+            width: 200px; /* Largura menor do card */
+            float: left;
+        }
+
+        .card img {
+            width: 190px; /* Largura fixa da imagem */
+            height: 190px; /* Altura fixa da imagem */
+            object-fit: cover; /* Ajusta a imagem mantendo a proporção e cobrindo a área designada */
+            
+        }
+
+        .more-info-btn {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .categorias {
+            display: flex;
+            justify-content: space-between; /* Para espaçamento uniforme entre as imagens */
+        }
+
+        .categorias a {
+            display: inline-block;
+        }
+
+        .categorias img {
+            width: 70px; /* Especifique o tamanho desejado para as imagens */
+            height: auto; /* Mantém a proporção da imagem */
+        }
+
+    </style>
+</head>
+<body>
+
+<?php
+// Exibir os produtos em forma de card
+if ($result->num_rows > 0) {
+    while ($row = $result->fetch_assoc()) {
+        echo '<div class="card">';
+        echo '<img src="' . $row['imagem'] . '" alt="' . $row['nome'] . '">';
+        echo '<h3>' . $row['nome'] . '</h3>';
+        echo '<p>Preço: R$ ' . $row['preco'] . '</p>';
+        
+        echo '<button class="more-info-btn">Mais Informações</button>';
+        echo '</div>';
+    }
+} else {
+  
+}
+
+// Fechar a conexão
+$conn->close();
+?>
+
 
     <!-- area onde vao ficar os anuncios, acho que eles separados assim iam ficar melhor, divididos por area, e dai o usuario mesmo vai vendo oque ele quer especificamente -->
     <div class="mais-procurados"><h1>Mais procurados</h1></div>
