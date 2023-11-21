@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -42,12 +40,11 @@
         </div>
     </section>
 
-    <section id="sobre" class="about">
-        <div class="about-content">
-            <h2>Sobre Nós</h2>
-            <p>O Refuge é uma plataforma dedicada a apoiar estrangeiros e refugiados em sua integração na sociedade. Estamos aqui para fornecer recursos, orientação e apoio, tornando essa transição o mais suave possível.</p>
-            <p>Nosso objetivo é criar uma comunidade solidária e acolhedora para refugiados, onde todos se sintam seguros e bem-vindos. Junte-se a nós e comece sua jornada para uma nova vida!</p>
-            <a href="sobre.html" class="saiba-mais-button">Saiba Mais</a>
+    <section id="doacao" class="donation">
+        <div class="donation-content">
+            <h2>Seja um Herói! Faça uma Doação</h2>
+            <p>Transforme vidas e faça parte da mudança. Sua contribuição é valiosa.</p>
+            <a href="doacao.php" class="doe-agora-button">Doe Agora</a>
         </div>
     </section>
 
@@ -59,12 +56,10 @@
         <p>&copy; 2023 R.E.F.U.G.E Todos os direitos reservados.</p>
     </footer>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- Adiciona o FontAwesome para os ícones -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script>
         document.onreadystatechange = function () {
             if (document.readyState === "complete") {
-                // Esconde a tela de carregamento quando a página estiver totalmente carregada
-                // Aguarda 1 segundo (1000 milissegundos) antes de esconder a tela de carregamento
                 setTimeout(function() {
                     document.getElementById("loader").style.display = "none";
                 }, 1500);
