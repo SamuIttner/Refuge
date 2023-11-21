@@ -34,9 +34,8 @@ button[type="submit"] {
   color: #fff;
   border: none;
   border-radius: 3px;
-  margin-left: 1100px;
   cursor: pointer;
-  width: 80px;
+  width: 90px;
 }
 
 h1{
@@ -178,3 +177,57 @@ nav a:hover {
     margin-right: 0;
   }
   
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #000;
+}
+
+label {
+    color: #495057;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+}
+
+.btn {
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-primary {
+    background-color: #000;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #000;
+    color: white;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+    color: white;
+}
