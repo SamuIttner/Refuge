@@ -50,7 +50,7 @@
         <!-- ao inves de adicionar, mudei o nome para anunciar, que fica mais legalzinho eu acho -->
         <!-- Samuel - Gostei -->
         <div class="adicionar">
-            <a href="adicionar.html">
+            <a href="adicionar.php">
             <button type="submit">Anunciar</button>
             </a>
         </div>
