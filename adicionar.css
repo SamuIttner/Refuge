@@ -24,7 +24,7 @@ header button:hover{
 }
 
 .voltar-botao i {
-  float: left;
+  right: 0;
   margin-left: -5px;
 }
 
@@ -40,6 +40,7 @@ button[type="submit"] {
 
 h1{
   font-size: 30px;
+  
 }
 
 .logo img { 
@@ -218,8 +219,8 @@ textarea {
 }
 
 .btn-primary:hover {
-    background-color: #000;
-    color: white;
+    background-color: #43e96d;
+    color: black;
 }
 
 .btn-secondary {
@@ -230,4 +231,86 @@ textarea {
 .btn-secondary:hover {
     background-color: #5a6268;
     color: white;
+}
+
+.Btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 45px;
+  height: 45px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition-duration: .3s;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.199);
+  background-color: #43e96d;
+  margin-left: 1400px;
+  position: fixed;
+  margin-top: -15px;
+}
+
+
+/* plus sign */
+.sign {
+  width: 100%;
+  transition-duration: .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sign svg {
+  width: 20px;
+}
+
+.sign svg path {
+  fill: white;
+}
+/* text */
+.text {
+  margin-left: 23px;
+  right: 0%;
+  width: 100%; /* Ajuste a largura conforme necessário */
+  opacity: 0;
+  color: white;
+  font-size: 1.2em;
+  font-weight: 600;
+  transform: translateX(100%);
+  transition-duration: .3s;
+}
+
+
+
+
+/* hover effect on button width */
+.Btn:hover {
+  width: 175px;
+  border-radius: 40px;
+  transition-duration: .3s;
+  
+}
+
+.Btn:hover .sign {
+  width: 30%;
+  transition-duration: .3s;
+  padding-left: 20px;
+}
+/* hover effect button's text */
+.Btn:hover .text {
+  opacity: 1;
+  transform: translateX(0%); /* Ajuste a margem à sua preferência */
+  transition-duration: .3s;
+}
+
+/* button click effect*/
+.Btn:active {
+  transform: translate(2px ,2px);
+}
+
+.x {
+  text-decoration: underline;
+  text-decoration-color:#43e96d;
 }
