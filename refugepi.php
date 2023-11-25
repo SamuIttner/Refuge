@@ -42,7 +42,7 @@
 
     <section id="doacao" class="donation">
         <div class="donation-content">
-            <h2>Seja um Herói! Faça uma Doação</h2>
+            <h2>Seja um Herói! Faça uma Doação </h2>
             <p>Transforme vidas e faça parte da mudança. Sua contribuição é valiosa.</p>
             <a href="doacao.php" class="doe-agora-button">Doe Agora</a>
         </div>
