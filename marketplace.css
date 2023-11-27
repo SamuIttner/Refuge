@@ -412,19 +412,20 @@ footer {
 }
 
 .nav-link:hover {
-  color: #43e96d; /* Altera a cor do texto ao passar o mouse */
+  color: none;
+  transform: scale(1.2);
 }
 
-.nav-link:active {
-  background-color: none;
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2);
+  margin-bottom: 0;
 }
 
-.nav-link img {
-  margin-bottom: 10px; /* Adiciona margem inferior na situação normal */
-  width: 24px;
-  height: auto;
-  transition: transform 0.3s, margin-bottom 0.3s; /* Adiciona uma transição para a propriedade transform e margem inferior */
+.navbar a:hover,
+.nav-link:hover {
+  transform: scale(1.2); /* Adiciona uma escala para aumentar o texto */
 }
+
 
 .nav-link:hover img {
   transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
@@ -457,7 +458,7 @@ footer {
 }
 
 .navbar a:hover {
-  color: #43e96d; /* Altera a cor do texto ao passar o mouse */
+  transform: none; /* Altera a cor do texto ao passar o mouse */
 }
 
 
