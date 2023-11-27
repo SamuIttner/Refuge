@@ -7,7 +7,6 @@
     <link rel="stylesheet" type="text/css" href="marketplace.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     
-
     <link rel="shortcut icon" href="imagem/mini-logo.ico" type="image/x-icon">
     <title>Marketplace</title>
 </head>
@@ -27,38 +26,21 @@
         <!-- barra de pesquisa, acho que ela fica boa no meio assim, so falta arrumar a largura e o desgin, mas acho que fica boa no meio assim do header -->
         
         <div class="search-bar">
-            <input type="text" placeholder="Pesquisar produtos...">
-            <button type="submit"><i class="fas fa-search"></i></button>
-          </div>
+    <input type="text" placeholder="">
+    <div class="typing-animation"></div>
+    <button type="submit"><i class="fas fa-search"></i></button>
+</div>
           
-        <!-- pensei em linkar essa parte com a socializaçao, tipo pro usuario conversar diretamente com o vendedor -->  
-        <!-- Samuel - na hora eu achei estranho, mas faz sentido tem que ver o resto do pessoal--> 
-          <div class="chat">
-            <a href="socializacao.html">
-            <button type="submit">Chat</button> 
-            </a>
-        </div>
+<nav>
+    <ul>
+        <li><a href="socializacao.html"><i class="fas fa-comments"></i> Chat</a></li>
+        <li><a href="carrinho.php"><i class="fas fa-heart"></i> Favoritos</a></li>
+        <li><a href="adicionar.php"><i class="fas fa-dollar-sign"></i> Anunciar</a></li>
+    </ul>
+</nav>
 
-        <!-- essa parte ia ser tipo um carrinho, mas o nome ia ser favoritos, tipo ao inves da pessoa adicionar o produto no carrinho ia colocar nos favoritos msm -->
-        <!-- Samuel - Isso eu não entendi, tem que desenvolver melhor-->
-        <div class="favoritos">
-            <a href="carrinho.php">
-            <button type="submit">Favoritos</button> 
-            </a>
-        </div>
-
-        <!-- ao inves de adicionar, mudei o nome para anunciar, que fica mais legalzinho eu acho -->
-        <!-- Samuel - Gostei -->
-        <div class="adicionar">
-            <a href="adicionar.php">
-            <button type="submit">Anunciar</button>
-            </a>
-        </div>
-
-    </header>
-
-        <!-- Samuel - Tentei fazer algo aqui para ser os slides em formato de carrossel (que fica passando sozinho sempre os mesmos) vejam se ficou bom-->
-        <div class="slider">
+</header>
+<div class="slider">
            <div class="slides">
             <!--Radio Buttons-->
             <input type="radio" name="radio-btn" id="radio1">
@@ -125,24 +107,53 @@
 </script>
 
 
+
+
+
+
+
+
+
+
 </br>
 </br>
 </br>
 
     <!-- essa area é pra ser que nem aquela da olx, bem em baixo da propaganda, com as imagens e o nome bem em baixo -->
-    <div class="categorias">
-        <a href="#"><img src="imagem/carros.png" alt="Autos e peças"></a>
-        <a href="#"><img src="imagem/casa-limpa.png" alt="Imóveis"></a>
-        <a href="#"><img src="imagem/dispositivos-eletronicos.png" alt="Eletrônicos e celulares"></a>
-        <a href="#"><img src="imagem/moveis.png" alt="Mobilia"></a>
-        <a href="#"><img src="imagem/moda.png" alt="Moda e beleza"></a>
-        <a href="#"><img src="imagem/esportes-com-bolas.png" alt="Esporte e lazer"></a>
-        <a href="#"><img src="imagem/instrumento-musical.png" alt="Música e hobbies"></a>
-        <a href="#"><img src="imagem/brinquedos.png" alt="Artigos infantis"></a>
-        <a href="#"><img src="imagem/agricultura-inteligente.png" alt="Agro e industria"></a>
-        <a href="#"><img src="imagem/animais-de-estimacao.png" alt="Animais"></a>
+    <div class="navbar">
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 1">Autos e peças</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">imovéis</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Eletrônicos</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Moveis</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Moda e beleza</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Esportes e lazer</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Músicas e hobbies</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Artigos infantis</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Agro e insdustria</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Todas as categorias</a>
+        </div>
+       
+        <!-- Adicione mais categorias conforme necessário -->
     </div>
-
     <?php
 // Conectar ao banco de dados (substitua os valores conforme necessário)
 $host = "localhost";
@@ -204,8 +215,8 @@ $result = $conn->query($sql);
         }
 
     </style>
-</head>
-<body>
+
+
 
 <?php
 // Exibir os produtos em forma de card
@@ -238,22 +249,82 @@ $conn->close();
     <div class="mais-procurados"><h1>Mais procurados Eletrônicos</h1></div>
 
 
-    <section id="loader">
-        <div class="loader-content">
-          <img src="imagem/mundo marketplace.png" alt="Carregando...">
-        </div>
-    </section>
 
 
-    <footer>
-      <div class="footer-links">
-          <a href="ajuda.html"><i class="fas fa-question-circle"></i> Ajuda</a>
-          <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
-      </div>
-      <p>&copy; 2023 R.E.F.U.G.E Todos os direitos reservados.</p>
-  </footer>
+    <script>
+        let count = 1;
+        document.getElementById("radio1").checked = true;
 
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+        setInterval(function(){
+            nextImage();
+        }, 5000)
+
+        function nextImage(){
+            count++;
+            if(count>4){
+                count = 1;
+            }
+
+            document.getElementById("radio" + count).checked = true;
+        }
+    </script>
+
+
+    
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+    const searchBarInput = document.querySelector('.search-bar input');
+    const typingAnimation = document.querySelector('.typing-animation');
+
+    const wordsToType = ["Carro", "Geladeira", "Celular", "Roupas", "Brinquedos", "Ar-condicionado", "ventilador"]; // Add more words as needed
+    let currentWordIndex = 0;
+    let typingInterval;
+
+    startTypingAnimation(); // Start the animation when the page loads
+
+    searchBarInput.addEventListener('focus', function () {
+        clearInterval(typingInterval); // Stop the typing animation when the input is focused
+    });
+
+    searchBarInput.addEventListener('blur', function () {
+        startTypingAnimation(); // Start the typing animation when the input is blurred
+    });
+
+    function startTypingAnimation() {
+        typingInterval = setInterval(() => {
+            const currentWord = wordsToType[currentWordIndex];
+            const currentText = currentWord.substring(0, searchBarInput.value.length + 1);
+
+            searchBarInput.value = currentText;
+            typingAnimation.textContent = currentText;
+
+            if (currentText === currentWord) {
+                currentWordIndex = (currentWordIndex + 1) % wordsToType.length;
+                clearInterval(typingInterval);
+                setTimeout(startErasingAnimation, 1000);
+            }
+        }, 200);
+    }
+
+    function startErasingAnimation() {
+        typingInterval = setInterval(() => {
+            const currentWord = wordsToType[currentWordIndex];
+            const currentText = currentWord.substring(0, searchBarInput.value.length - 1);
+
+            searchBarInput.value = currentText;
+            typingAnimation.textContent = currentText;
+
+            if (currentText === "") {
+                currentWordIndex = (currentWordIndex + 1) % wordsToType.length;
+                clearInterval(typingInterval);
+                setTimeout(startTypingAnimation, 1000);
+            }
+        }, 100);
+    }
+});
+</script>
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <script>
       document.onreadystatechange = function () {
           if (document.readyState === "complete") {
@@ -263,6 +334,11 @@ $conn->close();
           }
       };
   </script>
+  <section id="loader">
+        <div class="loader-content">
+          <img src="imagem/mundo marketplace.png" alt="Carregando...">
+        </div>
+    </section>
   
 </body>
 </html>
