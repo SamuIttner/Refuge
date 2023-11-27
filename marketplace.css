@@ -161,7 +161,6 @@ footer {
   color: #fff;
   padding: 20px;
   text-align: center;
-  margin-top: 60px;
 }
 
 .footer-links a {
@@ -169,13 +168,138 @@ footer {
   text-decoration: none;
   color: #43e96d;
 }
+
 .footer p {
   font-size: 1.2em;
   margin-top: 10px;
 }
+
 .footer-links a:last-child {
   margin-right: 0;
 }
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #43e96d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-links a:hover {
+  color: #43e96d;
+}
+
+.footer-links a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.footer-links a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #43e96d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-links a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.categorias {
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  width: 318px; /* Largura total da barra de pesquisa (ajustada para incluir o botão) */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #32c77d; /* Adicionando uma borda sólida */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo transparente */
+}
+
+.search-bar button {
+  width: 50px; /* Largura do botão (ajustada conforme necessário) */
+  height: 40px;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #2c2b3a; 
+  color: #43e96d;
+}
+
+.fa-search {
+  margin-right: 5px;
+}
+
+
+.typing-animation {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  opacity: 0.10;
+  animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite; /* Safari and Chrome */
+  -moz-animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite; /* Firefox */
+  -o-animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite; /* Opera */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #43e96d; }
+}
+
+
 
 .slider {
   margin: 0 auto;
@@ -261,8 +385,120 @@ footer {
   background-color: black;
 }
 
-.categorias {
-  margin-left: 500px;
-  margin-top: 30px;
+
+
+
+
+.navbar {
+  overflow: hidden;
+  display: flex;
 }
 
+.nav-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  width: auto;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: #43e96d; /* Altera a cor do texto ao passar o mouse */
+}
+
+.nav-link:active {
+  background-color: none;
+}
+
+.nav-link img {
+  margin-bottom: 10px; /* Adiciona margem inferior na situação normal */
+  width: 24px;
+  height: auto;
+  transition: transform 0.3s, margin-bottom 0.3s; /* Adiciona uma transição para a propriedade transform e margem inferior */
+}
+
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 0; /* Remove a margem inferior ao passar o mouse */
+}
+
+/* Estilo semelhante ao botão da navegação de abas */
+.navbar a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+}
+
+.navbar a img {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 85px;
+  height: auto;
+  transition: transform 0.3s, margin-bottom 0.3s; /* Adiciona uma transição para a propriedade transform e margem inferior */
+}
+
+.navbar a:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 10px; /* Remove a margem inferior ao passar o mouse */
+}
+
+.navbar a:hover {
+  color: #43e96d; /* Altera a cor do texto ao passar o mouse */
+}
+
+
+/*barra navegaçao de abas */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 15px; 
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+}
+
+nav a i {
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover i {
+  transform: translateX(-5px);
+  color: #43e96d;
+}
+
+nav a:hover {
+  background-color: #2c2b3a; 
+  color: #43e96d;
+}
+
+   
