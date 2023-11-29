@@ -140,7 +140,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 </head>
 <body>
     <div class="container">
-        <h2>Cadastro de Produto</h2>
+        <h2 style="color: black;">Cadastro de Produto</h2>
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="nome">Nome:</label>
