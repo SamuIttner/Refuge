@@ -40,7 +40,9 @@
 </nav>
 
 </header>
-<div class="slider">
+
+<section class="fundo-slide"> 
+    <div class="slider">
            <div class="slides">
             <!--Radio Buttons-->
             <input type="radio" name="radio-btn" id="radio1">
@@ -51,16 +53,16 @@
 
             <!--Slide Images-->
             <div class="slide primeiro">
-                <img src="imagem/chinelo.jpg" alt="Imagem chinelo"/>
+                <img src="imagem/propaganda1.png" alt="Imagem Propaganda1"/>
             </div>
             <div class="slide">
-                <img src="imagem/carro.jpg" alt="Imagem Carro"/>
+                <img src="imagem/propaganda2.jpg" alt="Imagem Propaganda2"/>
             </div>
             <div class="slide">
-                <img src="imagem/bicicleta.jpg" alt="Imagem bicicleta"/>
+                <img src="imagem/propaganda3.jpg" alt="Imagem Propaganda3"/>
             </div>
             <div class="slide">
-                <img src="imagem/celular.jpg" alt="Imagem Celular"/>
+                <img src="imagem/propaganda4.jpg" alt="Imagem Propaganda4"/>
             </div>
             <!--FIM Slide Images-->
 
@@ -106,7 +108,7 @@
 
 </script>
 
-
+</section>
 
 
 
