@@ -301,10 +301,17 @@ footer {
 
 
 
+
+
+.fundo-slide{
+  height: fit-content;
+  background-color: #2c2b3a;
+}
+
 .slider {
   margin: 0 auto;
-  width: 225px;
-  height: 200px;
+  width: 1125px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -322,11 +329,15 @@ footer {
   transition: 2s;
 }
 .slide img{
-  width: 230px;
+  margin-top: 15px;
+  width: 1150px;
+  height: 300px;
 }
 .manual-navigation{
   position: absolute;
   width: 230px;
+  margin-left: 450px;
+  margin-top: 125px;
   display: flex;
   justify-content: center;
 }
@@ -338,7 +349,7 @@ footer {
   transition: .5s;
 }
 .manual-btn:not(:last-child){
-  margin-right: 40px;
+  margin-right: 200px;
 }
 .manual-btn:hover{
   background-color: black;
@@ -356,7 +367,7 @@ footer {
   margin-left: -75%;
 }
 .navigation-auto div{
-  border: 2px solid blue;
+  border: 2px solid #1d1c28;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
@@ -365,12 +376,13 @@ footer {
 .navigation-auto{
   position: absolute;
   width: 230px;
-  margin-top: 200px;
+  margin-left: 450px;
+  margin-top: 325px;
   display: flex;
   justify-content: center;
 }
 .navigation-auto div:not(:last-child){
-  margin-right: 40px;
+  margin-right: 200px;
 }
 #radio1:checked ~ .navigation-auto .auto-btn1{
   background-color: black;
@@ -384,6 +396,11 @@ footer {
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background-color: black;
 }
+
+
+
+
+
 
 
 
