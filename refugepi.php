@@ -40,8 +40,8 @@
         </div>
     </section>
 
-    <section id="doacao" class="donation">
-        <div class="donation-content">
+    <section id="doacao" class="donation" style="display: none;">
+        <div id="conteudo-doacao" class="donation-content">
             <h2>Seja um Herói! Faça uma Doação </h2>
             <p>Transforme vidas e faça parte da mudança. Sua contribuição é valiosa.</p>
             <a href="doacao.php" class="doe-agora-button">Doe Agora</a>
@@ -65,7 +65,15 @@
                 }, 1500);
             }
         };
+    
+        setTimeout(function () {
+            document.getElementById("doacao").style.display = 'block';
+    }, 1500); 
+
+
+
     </script>
+
     
 </body>
 </html>
