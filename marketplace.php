@@ -121,38 +121,41 @@
 </br>
 </br>
 
-    <!-- essa area é pra ser que nem aquela da olx, bem em baixo da propaganda, com as imagens e o nome bem em baixo -->
-    <div class="navbar">
+  <!-- essa area é pra ser que nem aquela da olx, bem em baixo da propaganda, com as imagens e o nome bem em baixo -->
+  <div class="navbar">
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 1">Autos e peças</a>
+            <a href="#" class="nav-link"><img src="imagem/carroicone.jpg" alt="Ícone 1">Autos e peças</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">imovéis</a>
+            <a href="#" class="nav-link"><img src="imagem/casaicone.jpg" alt="Ícone 2">imovéis</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Eletrônicos</a>
+            <a href="#" class="nav-link"><img src="imagem/celularicone.jpg" alt="Ícone 2">Eletrônicos</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Moveis</a>
+            <a href="#" class="nav-link"><img src="imagem/sofaicone.jpg" alt="Ícone 2">Moveis</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Moda e beleza</a>
+            <a href="#" class="nav-link"><img src="imagem/roupasicone.jpg" alt="Ícone 2">Moda e beleza</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Esportes e lazer</a>
+            <a href="#" class="nav-link"><img src="imagem/bolaicone.jpg" alt="Ícone 2">Esportes e lazer</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Músicas e hobbies</a>
+            <a href="#" class="nav-link"><img src="imagem/guitarraicone.jpg" alt="Ícone 2">Músicas e hobbies</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Artigos infantis</a>
+            <a href="#" class="nav-link"><img src="imagem/ursinhoicone.jpg" alt="Ícone 2">Artigos infantis</a>
         </div>
         <div class="nav-item">
-            <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Agro e insdustria</a>
+            <a href="#" class="nav-link"><img src="imagem/tratoricone.jpg" alt="Ícone 2">Agro e insdustria</a>
         </div>
         <div class="nav-item">
             <a href="#" class="nav-link"><img src="imagem/ps4.jpg" alt="Ícone 2">Todas as categorias</a>
         </div>
+       
+        <!-- Adicione mais categorias conforme necessário -->
+    </div>
        
         <!-- Adicione mais categorias conforme necessário -->
     </div>
@@ -196,11 +199,12 @@ $result = $conn->query($sql);
         .more-info-btn {
             margin-top: 10px;
             padding: 5px 10px;
-            background-color: #007bff;
+            background-color: #43e96d;
             color: #fff;
             border: none;
             cursor: pointer;
         }
+
 
         .categorias {
             display: flex;
@@ -220,25 +224,23 @@ $result = $conn->query($sql);
 
 
 
-<?php
-// Exibir os produtos em forma de card
-if ($result->num_rows > 0) {
-    while ($row = $result->fetch_assoc()) {
-        echo '<div class="card">';
-        echo '<img src="' . $row['imagem'] . '" alt="' . $row['nome'] . '">';
-        echo '<h3>' . $row['nome'] . '</h3>';
-        echo '<p>Preço: R$ ' . $row['preco'] . '</p>';
-        
-        echo '<button class="more-info-btn">Mais Informações</button>';
-        echo '</div>';
+<div class="cards-container">
+    <?php
+    // Exibir os produtos em forma de card
+    if ($result->num_rows > 0) {
+        while ($row = $result->fetch_assoc()) {
+            echo '<div class="card">';
+            echo '<img src="' . $row['imagem'] . '" alt="' . $row['nome'] . '">';
+            echo '<h3>' . $row['nome'] . '</h3>';
+            echo '<p>Preço: R$ ' . $row['preco'] . '</p>';
+            echo '<button class="more-info-btn">Mais Informações</button>';
+            echo '</div>';
+        }
+    } else {
+        // Lida com o caso em que não há produtos
     }
-} else {
-  
-}
-
-// Fechar a conexão
-$conn->close();
-?>
+    ?>
+</div>
 
 
     <!-- area onde vao ficar os anuncios, acho que eles separados assim iam ficar melhor, divididos por area, e dai o usuario mesmo vai vendo oque ele quer especificamente -->
