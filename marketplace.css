@@ -520,3 +520,89 @@ nav a:hover {
 }
 
    
+.navbar {
+  overflow: hidden;
+  display: flex;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  width: auto;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: none;
+  transform: scale(1.2);
+}
+
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2);
+  margin-bottom: 0;
+}
+
+.navbar a:hover,
+.nav-link:hover {
+  transform: scale(1.2); /* Adiciona uma escala para aumentar o texto */
+}
+
+
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 0; /* Remove a margem inferior ao passar o mouse */
+}
+
+/* Estilo semelhante ao botão da navegação de abas */
+.navbar a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.0em;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.navbar a img {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 85px;
+  height: auto;
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  border-radius: 8px;
+  transition: transform 0.3s, margin-bottom 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 10px; /* Remove a margem inferior ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+  
+}
+
+.navbar a:hover {
+  transform: none; /* Altera a cor do texto ao passar o mouse */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define o layout em grade responsiva */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px; /* Espaçamento interno da caixa */
+  border: 1px solid #ccc; /* Adiciona uma borda ao redor dos cards */
+}
