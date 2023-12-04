@@ -124,5 +124,23 @@
         </aside>
       </div>
     </main>
+
+    <section id="loader">
+        <div class="loader-content">
+          <img src="imagem/mundo marketplace.png" alt="Carregando...">
+        </div>
+    </section>
+
+    <script>
+        document.onreadystatechange = function () {
+            if (document.readyState === "complete") {
+                setTimeout(function() {
+                    document.getElementById("loader").style.display = "none";
+                }, 1500);
+            }
+        };
+    </script>
+
+
   </body>
 </html>
