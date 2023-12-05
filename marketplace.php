@@ -246,11 +246,6 @@ $result = $conn->query($sql);
     <!-- area onde vao ficar os anuncios, acho que eles separados assim iam ficar melhor, divididos por area, e dai o usuario mesmo vai vendo oque ele quer especificamente -->
     
 
-    <div class="mais-procurados"><h1>Mais procurados em Moda</h1></div>
-
-    <div class="mais-procurados"><h1>Mais procurados em automoveis</h1></div>
-
-    <div class="mais-procurados"><h1>Mais procurados Eletrônicos</h1></div>
 
 
 
