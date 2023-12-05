@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 21/11/2023 às 05:39
+-- Tempo de geração: 05/12/2023 às 04:21
 -- Versão do servidor: 10.4.28-MariaDB
--- Versão do PHP: 8.0.28
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -67,7 +67,9 @@ CREATE TABLE `produtos` (
 --
 
 INSERT INTO `produtos` (`id`, `nome`, `preco`, `descricao`, `imagem`) VALUES
-(24, 'carro', 'R$ 10000', 'carro bonito', './imgprodutos/carro1.jpg');
+(27, 'Bebida', 'R$ 16', 'bebida', './imagem/bebida.jpg'),
+(28, 'bicicleta', 'R$ 700', 'biccicleta', './imagem/bicicleta.jpg'),
+(29, 'celular', 'R$ 2350', 'cell', './imagem/celular.jpg');
 
 --
 -- Índices para tabelas despejadas
@@ -99,7 +101,7 @@ ALTER TABLE `cadastro`
 -- AUTO_INCREMENT de tabela `produtos`
 --
 ALTER TABLE `produtos`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
