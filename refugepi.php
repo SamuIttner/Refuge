@@ -21,6 +21,16 @@
                 <li><a href="marketplace.php"><i class="fas fa-shopping-basket"></i> Marketplace</a></li>
             </ul>
         </nav>
+        <div class="language-selector">
+    <button class="language-button" onclick="toggleLanguages()">Idioma</button>
+    <div class="language-options" id="languageOptions">
+        <a href="#" class="language-option" id="pt-br">🇧🇷 Português</a>
+        <a href="#" class="language-option" id="en">🇺🇸 English</a>
+        <!-- Adicione mais opções conforme necessário -->
+    </div>
+</div>
+    </div>
+
     </header>
 
     <section id="loader">
@@ -70,7 +80,20 @@
             document.getElementById("doacao").style.display = 'block';
     }, 1500); 
 
+    function toggleLanguages() {
+    var languageOptions = document.getElementById('languageOptions');
+    languageOptions.style.display = (languageOptions.style.display === 'block') ? 'none' : 'block';
+}
 
+// Fechar as opções de linguagem ao clicar fora delas
+document.addEventListener('click', function(event) {
+    var languageOptions = document.getElementById('languageOptions');
+    var languageButton = document.querySelector('.language-button');
+
+    if (!languageOptions.contains(event.target) && !languageButton.contains(event.target)) {
+        languageOptions.style.display = 'none';
+    }
+});
 
     </script>
 
