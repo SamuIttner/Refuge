@@ -310,7 +310,7 @@ footer {
 
 .slider {
   margin: 0 auto;
-  width: 1125px;
+  width: 1800px;
   height: 350px;
   overflow: hidden;
 }
@@ -330,13 +330,13 @@ footer {
 }
 .slide img{
   margin-top: 15px;
-  width: 1150px;
+  width: 1800px;
   height: 300px;
 }
 .manual-navigation{
   position: absolute;
   width: 230px;
-  margin-left: 450px;
+  margin-left: 750px;
   margin-top: 125px;
   display: flex;
   justify-content: center;
@@ -376,7 +376,688 @@ footer {
 .navigation-auto{
   position: absolute;
   width: 230px;
-  margin-left: 450px;
+  margin-left: 750px;
+  margin-top: 325px;
+  display: flex;
+  justify-content: center;
+}
+.navigation-auto div:not(:last-child){
+  margin-right: 200px;
+}
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background-color: black;
+}
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background-color: black;
+}
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background-color: black;
+}
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background-color: black;
+}
+
+
+
+
+
+
+
+
+
+
+.navbar {
+  overflow: hidden;
+  display: flex;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  width: auto;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: none;
+  transform: scale(1.2);
+}
+
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2);
+  margin-bottom: 0;
+}
+
+.navbar a:hover,
+.nav-link:hover {
+  transform: scale(1.2); /* Adiciona uma escala para aumentar o texto */
+}
+
+
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 0; /* Remove a margem inferior ao passar o mouse */
+}
+
+/* Estilo semelhante ao botão da navegação de abas */
+.navbar a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+}
+
+.navbar a img {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 85px;
+  height: auto;
+  transition: transform 0.3s, margin-bottom 0.3s; /* Adiciona uma transição para a propriedade transform e margem inferior */
+}
+
+.navbar a:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 10px; /* Remove a margem inferior ao passar o mouse */
+}
+
+.navbar a:hover {
+  transform: none; /* Altera a cor do texto ao passar o mouse */
+}
+
+
+/*barra navegaçao de abas */
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 15px; 
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+}
+
+nav a i {
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+nav a:hover i {
+  transform: translateX(-5px);
+  color: #43e96d;
+}
+
+nav a:hover {
+  background-color: #2c2b3a; 
+  color: #43e96d;
+}
+
+   
+.navbar {
+  overflow: hidden;
+  display: flex;
+}
+
+.nav-item {
+  flex: 1;
+  text-align: center;
+  position: relative;
+  padding: 10px;
+  width: auto;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  color: none;
+  transform: scale(1.2);
+}
+
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2);
+  margin-bottom: 0;
+}
+
+.navbar a:hover,
+.nav-link:hover {
+  transform: scale(1.2); /* Adiciona uma escala para aumentar o texto */
+}
+
+
+.nav-link:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 0; /* Remove a margem inferior ao passar o mouse */
+}
+
+/* Estilo semelhante ao botão da navegação de abas */
+.navbar a {
+  color: #000;
+  font-weight: bold;
+  font-size: 1.0em;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.navbar a img {
+  margin-right: 5px;
+  margin-left: 5px;
+  width: 85px;
+  height: auto;
+  border-radius: 8px; /* Adiciona bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+  border-radius: 8px;
+  transition: transform 0.3s, margin-bottom 0.3s, box-shadow 0.3s;
+}
+
+.navbar a:hover img {
+  transform: translateX(-5px) scale(1.2); /* Adiciona uma escala para aumentar a imagem */
+  margin-bottom: 10px; /* Remove a margem inferior ao passar o mouse */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Aumenta a sombra ao passar o mouse */
+  
+}
+
+.navbar a:hover {
+  transform: none; /* Altera a cor do texto ao passar o mouse */
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Define o layout em grade responsiva */
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px; /* Espaçamento interno da caixa */
+  border: 1px solid #ccc; /* Adiciona uma borda ao redor dos cards */
+}
+
+
+footer {
+  background-color: #1d1c28;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin-right: 15px; 
+  text-decoration: none;
+  color: #43e96d;
+}
+
+.footer p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.footer-links a:last-child {
+  margin-right: 0;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #43e96d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-links a:hover {
+  color: #43e96d;
+}
+
+.footer-links a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.footer-links a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #43e96d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-links a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}body, html {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+header {
+  background-color: #1d1c28;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px; 
+}
+
+header button:hover{
+  background-color: black;
+  color: #43e96d;
+}
+
+h1{
+  font-size: 30px;
+}
+
+.logo img { 
+  height: auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease; 
+}
+
+nav h1 i {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
+nav a:hover {
+  background-color: #2c2b3a; 
+  color: #43e96d;
+}
+
+.container-search {
+  text-align: center;
+  margin-top: -35px;
+  margin-bottom: 5px;
+}
+
+
+
+
+
+
+
+.adicionar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.favoritos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.chat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 7px;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  padding-left: 800px;
+  margin-top: 7px;
+}
+
+
+
+
+
+
+
+
+input[type="text"] {
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+}
+
+button[type="submit"] {
+    padding: 5px 10px;
+    background-color: #43e96d; 
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    margin-left: 2px;
+    cursor: pointer;
+}
+
+
+
+@keyframes pulsate {
+  0% {
+    transform: scale(0.8);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+#loader {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background-color: #f0f0f0ff; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader-content img {
+  max-width: 150px; 
+  animation: pulsate 1.5s infinite;   
+}
+
+
+footer {
+  background-color: #1d1c28;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-links a {
+  margin-right: 15px; 
+  text-decoration: none;
+  color: #43e96d;
+}
+
+.footer p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.footer-links a:last-child {
+  margin-right: 0;
+}
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-links a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #43e96d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-links a:hover {
+  color: #43e96d;
+}
+
+.footer-links a:hover:before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+.footer-links a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #43e96d;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.footer-links a:hover:after {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
+
+.categorias {
+  margin-left: 500px;
+  margin-top: 30px;
+}
+
+.search-bar {
+  position: relative;
+  display: flex;
+  width: 318px; /* Largura total da barra de pesquisa (ajustada para incluir o botão) */
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #32c77d; /* Adicionando uma borda sólida */
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5); /* Fundo transparente */
+}
+
+.search-bar button {
+  width: 50px; /* Largura do botão (ajustada conforme necessário) */
+  height: 40px;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.search-bar button:hover {
+  background-color: #2c2b3a; 
+  color: #43e96d;
+}
+
+.fa-search {
+  margin-right: 5px;
+}
+
+
+.typing-animation {
+  position: absolute;
+  left: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  opacity: 0.10;
+  animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite;
+  -webkit-animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite; /* Safari and Chrome */
+  -moz-animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite; /* Firefox */
+  -o-animation: typing 5s steps(10, end), blink-caret 0.75s step-end infinite; /* Opera */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent; }
+  50% { border-color: #43e96d; }
+}
+
+
+
+
+
+.fundo-slide{
+  height: fit-content;
+  background-color: #ffffff;
+}
+
+.slider {
+  margin: 0 auto;
+  width: 1800px;
+  height: 350px;
+  overflow: hidden;
+}
+
+.slides {
+  width: 400%;
+  height: 200px;
+  display: flex;
+}
+.slides input {
+  display: none;
+}
+.slide{
+  width: 25%;
+  position: relative;
+  transition: 2s;
+}
+.slide img{
+  margin-top: 15px;
+  width: 1800px;
+  height: 300px;
+}
+.manual-navigation{
+  position: absolute;
+  width: 230px;
+  margin-left: 750px;
+  margin-top: 125px;
+  display: flex;
+  justify-content: center;
+}
+.manual-btn{
+  border: 2px solid black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+}
+.manual-btn:not(:last-child){
+  margin-right: 200px;
+}
+.manual-btn:hover{
+  background-color: black;
+}
+#radio1:checked ~ .primeiro{
+  margin-left: 0;
+}
+#radio2:checked ~ .primeiro{
+  margin-left: -25%;
+}
+#radio3:checked ~ .primeiro{
+  margin-left: -50%;
+}
+#radio4:checked ~ .primeiro{
+  margin-left: -75%;
+}
+.navigation-auto div{
+  border: 2px solid #1d1c28;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+.navigation-auto{
+  position: absolute;
+  width: 230px;
+  margin-left: 750px;
   margin-top: 325px;
   display: flex;
   justify-content: center;
