@@ -305,3 +305,45 @@ footer {
       transform: scale(1);
   }
 }
+.language-selector {
+  position: relative;
+  display: inline-block;
+}
+
+.language-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 15px; /* Adicionando algum preenchimento para melhorar a aparência */
+}
+
+.language-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #1d1c28;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  white-space: nowrap; /* Evitar quebrar linha */
+}
+
+.language-option {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.language-option:hover {
+  background-color: #2c2b3a;
+  text-decoration: underline;
+}
+
+/* Adicionando transição para suavizar a abertura e o fechamento */
+.language-options {
+  transition: display 0.3s ease-in-out;
+}
