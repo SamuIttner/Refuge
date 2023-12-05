@@ -222,8 +222,8 @@ $result = $conn->query($sql);
 
     </style>
 
-
-
+    <div class="mais-procurados"><h1>Mais procurados</h1></div>
+    
 <div class="cards-container">
     <?php
     // Exibir os produtos em forma de card
@@ -244,7 +244,7 @@ $result = $conn->query($sql);
 
 
     <!-- area onde vao ficar os anuncios, acho que eles separados assim iam ficar melhor, divididos por area, e dai o usuario mesmo vai vendo oque ele quer especificamente -->
-    <div class="mais-procurados"><h1>Mais procurados</h1></div>
+    
 
     <div class="mais-procurados"><h1>Mais procurados em Moda</h1></div>
 
