@@ -343,6 +343,14 @@ $result = $conn->query($sql);
           <img src="imagem/mundo marketplace.png" alt="Carregando...">
         </div>
     </section>
-  
+
+        <footer>
+        <div class="footer-links">
+            <a href="ajuda.html"><i class="fas fa-question-circle"></i> Ajuda</a>
+            <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a>
+        </div>
+        <p>&copy; 2023 R.E.F.U.G.E Todos os direitos reservados.</p>
+    </footer>
+    
 </body>
 </html>
